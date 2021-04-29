@@ -1,14 +1,18 @@
-const refs = {
- textInput : document.querySelector('input#name-input'),
- nameOutput : document.querySelector('#name-output'),
-}
+
+const textInput = document.querySelector("#name-input");
+const nameOutput = document.querySelector("#name-output");
 
 
 
-refs.textInput.addEventListener('input', onInputChange);
+
+textInput.addEventListener("input", onInputChange);
 
 
 function onInputChange(event) {
-    console.log(event.currentTarget.value);
-    refs.nameOutput.textContent = event.currentTarget.value;
+    if (event.currentTarget.value === "") {
+        nameOutput.textContent = "незнакомец";
+    }
+    else {
+        nameOutput.textContent = event.currentTarget.value;
+    }
 }
