@@ -1,5 +1,5 @@
 const textInput = document.querySelector('#validation-input');
-const textLength = textInput.getAttribute('data-length');
+const textLength = textInput.dataset.length;
 
 function ChangeColorInput() {
     if (Number(textLength) === textInput.value.length) {
