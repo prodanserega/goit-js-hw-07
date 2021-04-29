@@ -3,7 +3,7 @@ const numberOfCategoty = category.children.length;
 console.log(`В списке ${numberOfCategoty} категории.`);
 
 
-const categoryElem = document.querySelectorAll('li.item');
+const categoryElem = document.querySelectorAll('.item');
 const nameOfElements = categoryElem[0].firstElementChild.textContent;
 console.log(`Категория: ${nameOfElements}`);
 
